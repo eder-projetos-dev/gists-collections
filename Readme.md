@@ -27,10 +27,10 @@ Minha coleção de gists obtida pela API do GITHUB. <br>
 ## Funcionalidades
 
 - `RF01`: Listar todos os gists de um usuário utilizando a API do GITHUB.
-- `RF02`: O sistema deverá criar tags extraídas do campo description.
-- `RF03`: O sistema deverá permitir filtrar a listagem de gists por tags selecionadas pelo usuário.
-- `RF04`: O sistema deverá permitir que o usuário marque um gift como favorito.
-- `RF05`: O sistema deverá exibir as tags por ordem de contagem.
+- `RF02`: O sistema deverá criar tags extraídas do campo description do gist.
+- `RF03`: O sistema deverá permitir filtrar gists por tags selecionadas pelo usuário.
+- `RF04`: O sistema deverá permitir que o usuário marque um gist como favorito.
+- `RF05`: As tags com mais gists deverão aparecer primeiro.
 
 ## Acesso ao projeto
 
@@ -76,12 +76,9 @@ Mais informações:<br>
 
 
 
-## Abrir e rodar o projeto
+## Rodar o projeto
 
-Abrindo o projeto no IDLE:
-- Clique no menu `File`, `Open`;
-- Procure o local onde você salvou o projeto e selecione o arquivo `main.py`.
-- Com o arquivo aberto, pressione a tecla <kbd>F5</kbd> ou vá no menu `Run` e em seguida `Run Module`. :heavy_check_mark:
+flask --app app run --host=0.0.0.0
 
 
 ## Tecnologias utilizadas

@@ -53,7 +53,7 @@ def count_tags(tags):
 
 tags_dic = count_tags(tags)
 
-""" Recebe: tags_dic, Retorna: menu_tags (tags em ordem de contagem) """
+""" Recebe: tags_dic, Retorna: menu_tags --> Menu com as tags em ordem de contagem """
 
 def menu_tags(tags_dic):
     menu_tags = [] # menu apresenta tags em ordem de contagem
