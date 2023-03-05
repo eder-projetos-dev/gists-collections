@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 import random
-from gists import menu_tags
+from gists import *
 
 app = Flask(__name__)
 
