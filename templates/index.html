@@ -5,7 +5,8 @@
     <body>
         <input type="checkbox" id="fav" name="fav" checked> FAVORITO | * | 
         {% for i in range(len_tags): %}
-        <td align= middle width=150>{{tags[i].upper()}} | </td>        
+        <td align= middle width=150> 
+          <a class="" href="{{ url_for('filtro')}}">{{tags[i].upper()}}</a> | </td>       
         {% endfor %}       
 
     </body>
