@@ -3,11 +3,17 @@
         <title></title>
     </head>
     <body>
-        <input type="checkbox" id="fav" name="fav" checked> FAVORITO | * | 
-        {% for i in range(len_tags): %}
-        <td align= middle width=150> 
-          <a class="" href="{{ url_for('filtro')}}">{{tags[i].upper()}}</a> | </td>       
-        {% endfor %}       
 
+      <script src="{{url_for('static', filename='js/script.js')}}"></script>
+           
+       <input type="checkbox" id="fav" name="fav" checked> FAVORITO | * | 
+     
+      {% for i in range(len_tags): %}
+      
+        <td align= middle width=150>
+          
+          <a href="{{ url_for('filtro')}}" onclick='clickfunc(this)'> {{ tags[i].upper() }} </a></td>  |
+        {% endfor %}
+      
     </body>
 </html>
